@@ -23,7 +23,7 @@ namespace AmazonReportGenerator
             driver.Navigate(PathConstants.URL);
 
             Login(driver, email, password);
-            RequestReport(driver, );
+            RequestReport(driver, PathConstants.Report_TypeDropDown_OrdersOption, PathConstants.Report_TimePeriodDropDown_Past4WeeksOption, PathConstants.Report_OrganizedByDropDown_AccountGroupsOption);
 
             driver.TearDown();
         }
